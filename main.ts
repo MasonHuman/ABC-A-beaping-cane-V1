@@ -1,4 +1,4 @@
-let sonarPin = 0
+let sonarPin = 0//test
 const buzzerPin = DigitalPin.P8
 basic.forever(function () {
     sonarPin = sonar.ping(
