@@ -23,12 +23,8 @@ basic.forever(function () {
         # # . # #
         `)
         return
-    }
-    if (sonarPin >= 110) {
-        beap(buzzerPin,1600)
-    } else if (sonarPin >= 90) {
-        beap(buzzerPin,1400)
-    } else if (sonarPin >= 70) {
+    }   
+   if (sonarPin >= 70) {
         beap(buzzerPin,1200)
     } else if (sonarPin >= 50) {
         beap(buzzerPin,1000)
@@ -43,7 +39,7 @@ basic.forever(function () {
     } else if (sonarPin >= 7) {
         beap(buzzerPin,62)
     } else if (sonarPin >= 4) {
-        beap(buzzerPin,31)
+        beap(buzzerPin,50)
     }
     let p = sonar.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Inches);
     led.toggle(3,1)
